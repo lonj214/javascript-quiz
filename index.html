@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Interview Quiz</title>
+</head>
+
+<!-- end of head -->
+<!-- start of body -->
+<body>
+    <!-- start of header -->
+    <header class="timeContainer">
+        <section class="timer">Timer: <span class="timer-count">0</span></section>
+    </header>
+    <section id="startScreen" class="startScreen">
+        <h1>JavaScript Coding Quiz</h1>
+        <p id="start">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 15 seconds!</p>
+        <button class="startQuizButton">Start Quiz</button>
+    </section>
+        <section class="qAndA hidden">
+            <div class="questions">
+                <p><h2 id="askedQuestion">Question</h2></p>
+            </div>
+            <div id="userChoice">
+                <ul class="userAnswer">
+                    <li><button class="answerButton">Answer 1</button></li>
+                    <li><button class="answerButton">Answer 2</button></li>
+                    <li><button class="answerButton">Answer 3</button></li>
+                    <li><button class="answerButton">Answer 4</button></li>
+                    <li><button class="answerButton">Answer 5</button></li>
+                </ul>
+            </div>
+            <div id="input" class="hidden"></div>
+        <section class="results"></section>
+    </section>
+    <section id="score" class="score hidden">
+        <h2>Good Job! You're Done!</h2>
+        <p>Score: <span class="userScore"></span></p>
+        <form>
+            <label>Enter Intial</label>
+            <input id="initial" type="text" placeholder="Enter your initials here" maxlength="100" width="200px"/>
+        </form>
+        <button class="highScoreButton" type="button">Save to Scoreboard</button>
+    </section>
+    <section class="highScoreBoard hidden">
+        <h2>High Scores</h2>
+        <p><span id="userIntials savedscore"></span></p>
+        <button class="returnButton" type="button">Return</button>
+        <button class="resetButton" type="button">Reset High Scores</button>
+    </section>
+    <script src="./assets/script.js"></script>
+</body>
