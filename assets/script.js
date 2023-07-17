@@ -142,11 +142,11 @@ var highScoreList = document.querySelector(".highScoreBoard");
 
 saveBtnEl.addEventListener('click', ()=> {
     console.log("Saved to Highscores!");
-    highScoreList.remove("hidden");
+    highScoreList.remove("highScoreBoard");
     outcomeOfUser.classList.add("hidden");
     saveHighScore();
     renderSaveHighScore();
-    console.log('Runnign saveHighScore and renderSaveHighScore function');
+    console.log('Running saveHighScore and renderSaveHighScore function');
 })
 
 var initialEl = document.querySelector("#initial");
