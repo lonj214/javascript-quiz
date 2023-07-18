@@ -142,7 +142,7 @@ var highScoreList = document.querySelector(".highScoreBoard");
 
 saveBtnEl.addEventListener('click', ()=> {
     console.log("Saved to Highscores!");
-    highScoreList.remove("highScoreBoard");
+    highScoreList.classList.remove("hidden");
     outcomeOfUser.classList.add("hidden");
     saveHighScore();
     renderSaveHighScore();
@@ -158,15 +158,16 @@ function saveHighScore() {
     };
     console.log("Highscore added to the board");
     console.log(nameAndScore);
-    localStorage.setItem(initialEl.value, JSON.stringify(nameAndScore));
+    localStorage.setItem("nameAndScore", JSON.stringify(nameAndScore));
     nameAndScore.length
 }
 
 function renderSaveHighScore() {
     var priorPlayer = JSON.parse(localStorage.getItem("nameAndScore"));
+    console.log(priorPlayer)
     if (priorPlayer !==null) {
-        document.querySelector("#initial").textContent = priorPlayer.theUserInitial;
-        document.querySelector("#userScore").textContent = priorPlayer.personScore;
+        document.querySelector("#userInitials").textContent = priorPlayer.theUserInitial;
+        document.querySelector("#savedscore").textContent = priorPlayer.personScore;
     } else {
         return;
     }
