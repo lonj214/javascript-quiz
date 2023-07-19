@@ -41,4 +41,11 @@ The application is deployed at live URL
 The application is loading with no errors
 
 ## Screenshots
-
+![screenshot](assets/screenshots/quiz-1.png)
+![screenshot](assets/screenshots/quiz-2.png)
+![screenshot](assets/screenshots/quiz-3.png)
+![screenshot](assets/screenshots/quiz-4.png)
+![screenshot](assets/screenshots/quiz-5.png)
+![screenshot](assets/screenshots/quiz-6.png)
+![screenshot](assets/screenshots/quiz-7.png)
+![screenshot](assets/screenshots/quiz-8.png)
